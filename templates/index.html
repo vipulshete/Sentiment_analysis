@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Review</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Restaurant Review</h1>
+  <form action="/submit_review" method="POST">
+
+    <label for="review">Review:</label>
+    
+    <textarea id="review" name="review" required></textarea>
+
+    <input type="submit" value="Submit Review">
+  </form>
+</body>
+</html>
